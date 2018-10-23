@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>music</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+	<div class="bg"></div>
+
+	<audio id="audio" class="audio" src=""></audio>
+
+	<div class="box">
+
+		<!-- 系统状态栏 -->
+		<div class="system"></div>
+
+		<!-- 歌曲列表 -->
+		<div class="music-list">
+			<ul id="list" class="list">
+
+				<li class="clearfix" data-url="./music/dengziqi_xihuanni.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/dengziqi.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">喜欢你</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">邓紫棋</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/zhanghuimei_wen.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/zhanghuimei.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">问</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">张惠妹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/liangziru_zaiailidengni.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liangjingru.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name one-text">
+							<span>在爱里等你</span>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">梁静茹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/liudehua_shiqisui.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liudehua.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">十七岁</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">刘德华</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				
+
+				<li class="clearfix" data-url="./music/dengziqi_yekongzhongzuiliangdexing.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/dengziqi.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">夜空中最亮的星</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">邓紫棋</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				
+
+				<li class="clearfix" data-url="./music/liangjingru_nuannuan.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liangjingru.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">暖暖</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">梁静茹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				
+
+				<li class="clearfix" data-url="./music/liudehua_shanghaitan.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liudehua.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">上海滩</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">刘德华</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/dengziqi_nibawoguanzhui.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/dengziqi.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">你把我灌醉</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">邓紫棋</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				
+				<li class="clearfix" data-url="./music/liuziling_nizenmeshedewonanguo.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liuziling.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">你怎么舍得我难过</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">刘紫玲</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/liudehua_guxinglei.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liudehua.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">孤星泪</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">刘德华</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/liangjingru_miguo.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liangjingru.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name one-text">
+							<span>秘果</span>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">梁静茹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/zhanghuimei_douduiyedoucuo.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/zhanghuimei.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">都对也都错</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">张惠妹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/liudehua_wangqingshui.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/liudehua.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name one-text">
+							<span>忘情水</span>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">刘德华</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				<li class="clearfix" data-url="./music/wangtiange_xinanlide.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/wangtiange.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">你怎么舍得我难过</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">王天戈</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+				
+
+				<li class="clearfix" data-url="./music/zhanghuimei_sanyue.mp3" data-play="false">
+					<div class="music-img fl">
+						<img class="auto-img" src="./images/zhanghuimei.jpg" />
+					</div>
+					<div class="music-info fl">
+						<div class="music-name">
+							<div class="one-text">三月</div>
+						</div>
+						<div class="music-singer">
+							<span>歌手:</span><span class="singer">张惠妹</span>
+						</div>
+					</div>
+					<div class="music-play fl">
+						<i class="fa fa-play icons"></i>
+					</div>
+				</li>
+
+
+
+
+
+
+			</ul>
+		</div>
+
+		<!-- 音乐控制条 -->
+		<div id="musicControl" class="music-control">
+
+			<div class="controls-box">
+				<div id="currentTime" class="time fl">00:00:00</div>
+				<div id="controls" class="controls fl">
+
+					<!-- 未激活层 -->
+					<div id="progressParent" class="not-active progress"></div>
+
+					<!-- 激活层 -->
+					<div id="progress" class="active progress"></div>
+
+					<!-- 滑块层 -->
+					<div id="mask" class="mask"></div>
+
+					<!-- 绑定事件层 -->
+					<div id="layer" class="layer"></div>
+
+				</div>
+				<div id="duration" class="time fl">00:00:00</div>
+			</div>
+
+			<div class="controls-status">
+				<div class="left fl">
+					<div id="singerImg" class="singer-img fl">
+						<div class="s-img">
+							<img class="auto-img" src="" />
+						</div>
+					</div>
+					<div id="playMode" class="play-mode fl" data-mode="exchange" data-icon="fa-exchange">
+						<div class="play-mode-icon ic">
+							<i class="fa fa-exchange"></i>
+							<div id="playModeMore" class="play-mode-more">
+								<div data-mode="exchange" data-icon="fa-exchange"><i class="fa fa-exchange"></i></div>
+								<div data-mode="loop" data-icon="fa-refresh"><i class="fa fa-refresh"></i></div>
+								<div data-mode="random" data-icon="fa-random"><i class="fa fa-random"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="middle fl">
+					<div id="prev" class="prev fl">
+						<div class="prev-icon ic">
+							<i class="fa fa-backward prev-i"></i>
+						</div>
+					</div>
+					<div id="play" class="playing fl">
+						<div class="playing-icon">
+							<i class="fa fa-play playing-i"></i>
+						</div>
+					</div>
+					<div id="next" class="next fl">
+						<div class="prev-icon ic">
+							<i class="fa fa-forward prev-i"></i>
+						</div>
+					</div>
+				</div>
+				<div class="right fl">
+					<div id="volume" class="volume">
+						<div class="volume-icon ic">
+							<i class="fa fa-volume-up"></i>
+							<div id="modifyVolume" class="modify-volume">
+								<!-- 未激活层 -->
+								<div id="volumeNotActive" class="volume-not-active"></div>
+
+								<!-- 激活层 -->
+								<div id="volumeActive" class="volume-active"></div>
+
+								<!-- 滑块层 -->
+								<div id="volumeMask" class="volume-mask"></div>
+
+								<!-- 绑定事件层 -->
+								<div id="volumeLayer" class="volume-layer"></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 写真面板 -->
+		<div id="photography" class="photography">
+			<div id="photo" class="photo"></div>
+			<div class="circle"></div>
+			<div id="close" class="close">
+				<i class="a"></i>
+				<i class="b"></i>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*重置浏览器默认样式*/
+body{
+	margin: 0 auto;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*预定义样式*/
+.auto-img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.clearfix{
+	overflow: hidden;
+}
+
+.one-text{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

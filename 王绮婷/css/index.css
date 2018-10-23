@@ -1,0 +1,426 @@
+html,body,.box{
+	height: 100%;
+}
+
+.audio{
+	display: none;
+}
+
+.bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: url("../images/haha.jpg") no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+	/*filter: blur(4px);*/
+	opacity: .25;
+}
+
+body{
+	background-color: #fff;
+}
+
+.box{
+	position: relative;
+	z-index: 2;
+}
+
+.system{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 20px;
+	background-color: rgba(10, 10, 10, .63);
+	z-index: 3;
+}
+
+.music-list{
+	padding-top: 20px;
+	height: calc(100% - 20px - 70px);
+	overflow-y: auto;
+}
+
+.music-control{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: calc(100% - 10px);
+	height: 60px;
+	background-color: rgba(0, 0, 0, .65 );
+	padding: 5px;
+	z-index: 7;
+}
+
+.list>li{
+	padding: 5px;
+	background-color: rgba(0, 0, 0, .5 );
+	color: rgba(0, 255, 255, .8);
+	margin-bottom: 5px;
+}
+li>div{
+	color: black;
+}
+
+.music-img{
+	width: 60px;
+	height: 60px;
+}
+
+.music-play{
+	width: 30px;
+	height: 30px;
+	margin-top: 15px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid rgba(10, 10, 10, .6);
+}
+
+.icons{
+	position: relative;
+	left: 0;
+	top: -1px;
+}
+
+.music-info{
+	width: calc(100% - 60px - 10px - 30px - 10px);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.music-info>div{
+	height: 30px;
+	line-height: 30px;
+}
+
+.music-name{
+	font-size: 12px;
+}
+
+.music-singer{
+	font-size: 14px;
+}
+
+.singer{
+	margin-left: 5px;
+}
+
+.controls-box{
+	height: 20px;
+}
+
+.controls{
+	width: calc(100% - 60px - 20px - 60px);
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 20px;
+	position: relative;
+}
+
+.progress{
+	position: absolute;
+	left: 0;
+	top: 7px;
+	height: 6px;
+	z-index: 4;
+}
+
+.not-active{
+	width: 100%;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.active{
+	width: 0;
+	background-image: linear-gradient(to right, #F0B9B2 0%, #ed4532 100%);
+}
+
+.mask{
+	position: absolute;
+	left: -7px;
+	top: 3px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #eee;
+	z-index: 5;
+	box-shadow: 0 0 5px 2px rgba(255, 255, 255, .5);
+	animation: light .8s linear infinite alternate;
+}
+
+.time{
+	width: 60px;
+	height: 20px;
+	font-size: 12px;
+	color: rgba(255, 255, 255, .6);
+	text-align: center;
+	line-height: 20px;
+}
+
+.layer{
+	position: absolute;
+	left: -15px;
+	top: 0;
+	width: calc(100% + 30px);
+	height: 20px;
+	z-index: 6
+}
+
+.controls-status{
+	margin-top: 5px;
+	height: 35px;
+}
+
+.controls-status>.left{
+	width: 30%
+}
+.controls-status>.left>div{
+	height: 35px;
+}
+
+.controls-status>.middle{
+	width: 60%;
+}
+.controls-status>.middle>div{
+	height: 35px;
+	width: 33.3333%;
+}
+
+.controls-status>.right{
+	width: 10%;
+}
+
+.singer-img{
+	width: 70%;
+	height: 100%;
+}
+
+.play-mode{
+	width: 30%;
+}
+
+.volume{
+	height: 35px;
+}
+
+.s-img{
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, .15);
+}
+
+.ic{
+	width: 25px;
+	height: 25px;
+	margin: 5px auto 0;
+	line-height: 25px;
+	text-align: center;
+	color: rgba(255, 255, 255, .6);
+}
+
+.prev-i{
+	position: relative;
+	left: -2px;
+}
+
+.playing-icon{
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+	line-height: 35px;
+	text-align: center;
+	color: rgba(255, 255, 255, .6);
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, .6);
+	box-sizing: border-box;
+}
+
+.playing-i{
+	position: relative;
+	left: 0;
+	top: -1px;
+}
+
+.play-mode-icon{
+	position: relative;
+}
+
+.play-mode-more{
+	position: absolute;
+	left: -5px;
+	top: -105px;
+	height: 90px;
+	width: 100%;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 7;
+	display: none;
+}
+.play-mode-more>div{
+	margin-top: 5px;
+}
+
+.volume-icon{
+	position: relative;
+}
+.modify-volume{
+	position: absolute;
+	top: -105px;
+	left: -5px;
+	width: 100%;
+	height: 90px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 7;
+	transform: rotateZ(180deg);
+	display: none;
+}
+
+.volume-not-active{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 15px;
+	margin:0 auto;
+	height: 70px;
+	width: 3px;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.volume-active{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 15px;
+	margin:0 auto;
+	height: 0;
+	width: 3px;
+	background-image: linear-gradient(to bottom, #F2E8A5 0%, #fde432 100%);
+}
+
+.volume-mask{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 10px;
+	margin:0 auto;
+	height: 12px;
+	width: 12px;
+	background-color: #eee;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 2px rgba(255, 255, 255, .5);
+	animation: light .8s linear 0s infinite alternate;
+}
+
+.volume-layer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 5px;
+	margin:0 auto;
+	height: 90px;
+	width: 12px;
+	z-index: 7;
+}
+
+@keyframes light {
+	from{
+		box-shadow: 0 0 5px 2px rgba(255, 255, 255, .5);
+	}
+	to{
+		box-shadow: 0 0 16px 2px rgba(255, 255, 255, 1);
+	}
+}
+
+
+/*写真面板样式*/
+.photography{
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 100%;
+	height: calc(100% - 20px - 70px);
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	z-index: 6;
+}
+
+.photo{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 2px solid rgba(255, 255, 255, .45);
+	border-radius: 50%;
+	box-shadow: 0 0 0 100px rgba(0, 0, 0, .35) inset;
+	/*background: url("../images/dengziqi.jpg") no-repeat center center;*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transform: rotateZ(0deg);
+	animation: r 10s linear 0s infinite normal paused;
+}
+
+.circle{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 2px solid rgba(255, 255, 255, .65);
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 2px rgba(255, 255, 255, .5);
+	animation: light .8s linear 0s infinite alternate;
+}
+
+.close{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.close>i{
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	left: 10px;
+	top: 0;
+	background-color: rgba(255, 255, 255, .65);
+}
+
+.close>i.a{
+	transform: rotateZ(45deg);
+}
+.close>i.b{
+	transform: rotateZ(-45deg);
+}
+
+@keyframes r {
+	from {
+		transform: rotateZ(0deg);
+	}
+
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.list>li.audio-active{
+	background-color: rgba(255, 255, 255, .15);
+}
